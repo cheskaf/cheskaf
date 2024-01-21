@@ -3,10 +3,10 @@ import { appConfig } from './app/app.config';
 import { AppComponent } from './app/app.component';
 
 import { Routes } from '@angular/router';
-import { HeaderComponent } from './app/header/header.component';
-import { AboutComponent } from './app/about/about.component';
-import { ProjectsComponent } from './app/projects/projects.component';  
-import { ContactComponent } from './app/contact/contact.component';
+import { HeaderComponent } from './app/general/header/header.component';
+import { AboutComponent } from './app/content/about/about.component';
+import { ProjectsComponent } from './app/content/projects/projects.component';  
+import { ContactComponent } from './app/content/contact/contact.component';
 
 bootstrapApplication(AppComponent, appConfig)
   .catch((err) => console.error(err));
