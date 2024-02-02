@@ -1,27 +1,44 @@
 <!-- skills.component.html -->
-<section class="p-8">
-    <div class="container mx-auto">
-      <h2 class="text-3xl font-bold mb-8">Skills</h2>
-  
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-        <!-- Skill: Python -->
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <h3 class="text-xl font-bold mb-4">Python</h3>
-          <p class="text-gray-700">Proficient in Python programming language for web development, data analysis, and automation.</p>
-        </div>
-  
-        <!-- Skill: Django -->
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <h3 class="text-xl font-bold mb-4">Django</h3>
-          <p class="text-gray-700">Experience in building web applications using the Django framework, including model-view-template (MVT) architecture.</p>
-        </div>
-  
-        <!-- Skill: Visual Studio Code -->
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <h3 class="text-xl font-bold mb-4">Visual Studio Code</h3>
-          <p class="text-gray-700">Proficient in using Visual Studio Code as an integrated development environment (IDE) for coding and debugging.</p>
-        </div>
+<section id="skills" class="section-container snap-center relative text-coffee flex flex-col items-center justify-center min-h-screen"> <!--dotted-bg text-coffee py-16 sm:py-20 md:py-24 lg:py-32 xl:py-24-->
+  <div class="container mx-auto max-w-7xl pb-12 sm:pb-6 pt-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-0 sm:gap-8">
+      <!-- Left -->
+      <div class="p-6 flex flex-col justify-center text-center sm:justify-start sm:text-left">
+        <h3 class="inline-block text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-amaranth"><span class="select-none hidden sm:inline">✨</span>Skills</h3>
+        <p class="xl:w-4/6 sm:ps-9 md:ps-12 text-gwanda text-sm md:text-base">
+          As a 4th year Information Technology student, I have gained 
+          solid experience in web development by using various 
+          programming languages and technologies in my projects.</p>
+        <hr class="w-16 h-0.5 mx-auto sm:mx-9 md:mx-12 my-4 bg-gwen border-0 rounded md:my-10">
+      </div>
+      <!-- Right -->
+      <div class="p-6 pb-6 sm:pt-6 flex flex-col justify-center text-center sm:justify-start sm:text-left">
+        <h5 class="text-base md:text-lg text-gwanda font-bold font-miriam-libre mb-4 underline decoration-melon decoration-2 underline-offset-2">Languages & Technologies</h5>
+        <ul class="list-inside text-sm md:text-base">
+          @for (category of categories; track $index) {
+            <li class="mb-5">
+              <i class="{{category.icon}} me-1 text-acorn text-sm hidden sm:inline"></i><span class="font-miriam-libre text-acorn">{{ category.title }}</span>
+                <ul class="mt-1 ps-6 flex flex-wrap justify-center text-center sm:justify-start sm:text-left gap-3 text-gwen">
+                    @for (skill of skills; track $index) {
+                        @if (skill.category === category.title) {
+                        <li class="px-2 border border-gwen rounded-md font-miriam-libre bg-transparent hover:bg-melody hover:border-melon transition-all">
+                            <div class="flex items-center">
+                                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2 fill-gwanda"><title>{{ skill.title }}</title><path [attr.d]="skill.svgpath"/></svg>
+                                {{ skill.title }}
+                            </div>
+                        </li>
+                        }
+                    }
+                </ul>
+            </li>
+          }
+        </ul>
       </div>
     </div>
+  </div>
+  <div class="arrow-container animate-bounce absolute bottom-0 inset-x-0 mb-8 text-center">
+    <a href="#contact" class="text-acorn hover:text-amaranth transition-all">
+      <i class="ci-Arrow_Down_LG"></i>
+    </a>
+  </div>
 </section>
-  

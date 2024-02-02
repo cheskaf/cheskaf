@@ -1,5 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
 @import url('./assets/fonts/coolicons.css');
+@import url('https://fonts.googleapis.com/css2?family=Miriam+Libre:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --color-amaranth: 216 31 76; /* amaranth red */
+        --color-gwanda: 140 63 81; /* quinacridone magenta */
+        --color-gwen: 206 131 131; /* old rose */
+        --color-melon: 228 173 168; /* melon */
+        --color-melody: 250 214 205; /* pale dogwood */
+        --color-cashew: 254 231 220; /* champagne pink */
+        --color-coffee: 57 39 37; /* bistre */
+        --color-acorn: 144 115 94; /* chamoisee */
+        --color-star: 255 192 88; /* xanthous */
+    }
+}
