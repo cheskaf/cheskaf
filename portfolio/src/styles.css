@@ -18,5 +18,25 @@
         --color-coffee: 57 39 37; /* bistre */
         --color-acorn: 144 115 94; /* chamoisee */
         --color-star: 255 192 88; /* xanthous */
+        --color-sunny: 220 116 20; /* sunglow */
+        --color-rosy: 208 18 69; /* fandango */
+        --color-gradienta: 254 226 226; /* gradient a */
+        --color-gradientb: 255 237 213; /* gradient b */
+        --color-gradientc: 27 0 13; /* gradient c */
+        --color-gradientd: 33 0 18; /* gradient d */
+        --color-transparent: rgba(140, 63, 81, 0.491); 
     }
+}
+
+.tooltip {
+    @apply invisible absolute;
+}
+
+.has-tooltip:hover .tooltip {
+    @apply visible z-50;
+}
+
+::selection {
+    color: #fff;
+    background: var(--color-transparent)
 }

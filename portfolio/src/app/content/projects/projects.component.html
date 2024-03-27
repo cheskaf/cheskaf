@@ -1,10 +1,13 @@
 <!-- projects.component.html -->
 <section id="projects" class="section-container snap-center relative dotted-bg text-coffee flex flex-col items-center justify-center min-h-screen"> <!--dotted-bg text-coffee py-16 sm:py-20 md:py-24 lg:py-32 xl:py-24-->
-  <div class="container mx-auto max-w-7xl py-6">
+  <div class="container mx-auto max-w-7xl p-6">
     <div class="mb-8 px-6 md:px-0">
-      <h3 class="inline-block text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-amaranth"><span class="select-none hidden md:inline">✨</span>Featured Projects</h3>
-      <p class="md:ps-12 text-gwanda text-sm md:text-base lg:text-lg">
-        Check out some of my favorite projects that I've worked on!</p>
+      <h3 class="inline-block text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-amaranth">
+        <span class="select-none hidden md:inline">✨</span>
+        <span class="dark:text-rosy">Featured Project</span>
+      </h3>
+      <p class="md:ps-12 text-gwanda dark:text-gwen/75 text-sm md:text-base lg:text-lg">
+        Check out my favorite project that I've worked on!</p>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-6 md:px-12">
       <!-- Project -->
@@ -15,16 +18,16 @@
           </div>
           <div class="rounded-lg flex flex-col justify-between content-between">
             <div class="mb-3">
-              <h4 class="inline-block text-xl md:text-2xl text-gwanda font-bold">{{ project.title }}</h4>
-              <p class="mb-3 font-miriam-libre text-sm text-gwen">{{ project.date }}</p>
-              <p class="mb-3 text-acorn text-sm md:text-base">{{ project.description }}</p>
-              <a href="#" class="font-miriam-libre text-gwanda hover:text-gwen text-sm md:text-base transition-all"><span class="underline decoration-melon hover:decoration-star transition-all me-1 decoration-4 underline-offset-2">See more</span><i class="ci-Arrow_Right_LG text-sm"></i></a>
+              <h4 class="inline-block text-xl md:text-2xl bg-gradient-to-r from-amaranth to-gwen dark:from-sunny dark:to-rosy bg-clip-text text-transparent font-bold">{{ project.title }}</h4>
+              <p class="mb-3 font-miriam-libre text-sm text-gwen dark:text-sunny/75">{{ project.date }}</p>
+              <p class="mb-3 text-acorn dark:text-acorn/75 text-sm lg:text-base">{{ project.description }}</p>
+              <a href="#" class="font-miriam-libre text-gwanda hover:text-gwen dark:text-sunny/75 dark:hover:text-rosy/50 text-sm lg:text-base transition-all"><span class="underline decoration-melon dark:decoration-rosy/50 hover:decoration-star hover:dark:decoration-sunny/50 transition-all me-1 decoration-4 underline-offset-2">See more</span><i class="ci-Arrow_Right_LG text-sm"></i></a>
               <!--<hr class="w-16 h-0.5 mx-auto md:mx-0 my-2 bg-acorn border-0 rounded md:my-6">-->
             </div>
-            <div class="text-gwen text-sm md:text-base">
+            <div class="text-gwen text-sm lg:text-base">
               <ul class="mt-1 flex flex-wrap gap-3">
                 @for (skill of project.skills; track $index) {
-                  <li class="px-2 border border-gwen rounded-md font-miriam-libre hover:bg-melody hover:border-melon transition-all">
+                  <li class="px-2 border border-gwen dark:border-gwen/25 rounded-md font-miriam-libre hover:bg-melody hover:border-melon hover:dark:bg-gwen/25 hover:dark:border-gwanda/25 transition-all">
                     <div class="flex items-center">
                         <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2 fill-gwanda"><title>{{ skill.title }}</title><path [attr.d]="skill.svgpath"/></svg>
                         {{ skill.title }}
