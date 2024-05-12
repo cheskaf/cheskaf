@@ -1,0 +1,43 @@
+<app-header></app-header>
+<!-- about.component.html -->
+<section id="about" class="section-container snap-center grid-bg flex items-center justify-center min-h-screen">
+    <div class="relative px-6">
+        <div class="mx-auto max-w-4xl">
+            <h3 class="inline-block text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-amaranth">
+                <span class="select-none hidden md:inline">✨</span>
+                <span class="dark:text-rosy">My Projects</span>
+            </h3>
+            <p class="md:ps-12 text-gwanda dark:text-gwen/75 text-sm md:text-base lg:text-lg mb-4">
+                Check out my recent projects and the technologies I used to build them. 🚀
+            </p>
+            <div class="grid grid-cols-1 gap-4">
+                <!-- Project -->
+                @for (project of projects; track $index) {
+                    <div class="rounded-lg border border-gwen/25 bg-white/25 dark:bg-gwen/25 p-5 md:mx-12 grid grid-cols-1 sm:grid-cols-3 gap-8">
+                        <div class="w-full rounded-lg overflow-hidden">
+                            <img class="inline rounded-lg" src="{{ project.imagepath }}" alt="{{ project.title }}">
+                        </div>
+                        <div class="col-span-2 rounded-lg flex flex-col justify-between content-between">
+                            <div class="mb-3">
+                                <h4 class="inline-block text-lg md:text-xl bg-gradient-to-r from-amaranth to-gwen dark:from-sunny dark:to-rosy bg-clip-text text-transparent font-bold">{{ project.title }}</h4>
+                                <p class="mb-3 text-acorn dark:text-gwen text-xs lg:text-sm">{{ project.description }}</p>
+                            </div>
+                            <div class="text-gwen text-xs lg:text-sm">
+                                <ul class="mt-1 flex flex-wrap gap-3">
+                                @for (skill of project.skills; track $index) {
+                                    <li class="px-2 border border-gwen dark:border-gwen/25 rounded-md font-miriam-libre hover:bg-melody hover:border-melon hover:dark:bg-gwen/25 hover:dark:border-gwanda/25 transition-all">
+                                    <div class="flex items-center">
+                                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2 fill-gwanda"><title>{{ skill.title }}</title><path [attr.d]="skill.svgpath"/></svg>
+                                        {{ skill.title }}
+                                    </div>
+                                    </li>
+                                }
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</section>

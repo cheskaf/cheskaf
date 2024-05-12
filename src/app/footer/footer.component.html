@@ -1,0 +1,52 @@
+<!-- footer.component.html -->
+<footer class="text-gwen dark:text-gwen/75 py-10">
+    <div class="container mx-auto text-xs">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-0 sm:gap-2 px-6 sm:px-12">
+            <div class="mb-10 sm:mb-4 justify-center text-center sm:justify-start sm:text-left">
+                <h4 class="inline-block text-xl sm:text-2xl font-bold font-miriam-libre">
+                    <span class="bg-gradient-to-r from-amaranth to-gwen dark:from-sunny dark:to-rosy bg-clip-text text-transparent">Cheska Francisco.</span>
+                </h4>
+                <p class="text-sm">
+                    Portfolio 
+                    <span class="bg-melody dark:bg-gwanda/75 dark:border-gwanda/25 rounded-md px-1 py-0.5 font-miriam-libre">v1.0</span> © 2024
+                </p>
+                <p class="text-sm">
+                    <a href="https://github.com/cheskaf/cheskaf/tree/master/portfolio" target="_blank" rel="noopener noreferrer">Made with ❤️ using Angular and Tailwind</a>
+                    <!--<span class="px-2 text-melon">/</span>-->
+                </p>
+                <!--<hr class="w-16 h-0.5 mx-auto sm:mx-0 my-3 bg-gwen border-0 rounded">-->
+            </div>
+            <div class="grid grid-cols-2 gap-0 sm:gap-2 sm:px-12 justify-center justify-items-center text-center sm:justify-start sm:text-left">
+                <div class="rounded-lg flex flex-col">
+                    <h5 class="text-sm sm:text-base text-gwanda dark:text-sunny/75 font-bold font-miriam-libre mb-1">Links</h5>
+                    <a routerLink="/" class="text-gwanda dark:text-gwen/75 hover:text-gwen text-xs transition-all mb-3">
+                        <span class="underline decoration-melon decoration-2 underline-offset-2 hover:decoration-star dark:decoration-rosy/75 dark:hover:decoration-sunny/75 transition-all">Home</span>
+                    </a>
+                    <a routerLink="/projects" class="has-tooltip text-gwanda dark:text-gwen/75 hover:text-gwen transition-all mb-3">
+                        <span class="underline decoration-melon decoration-2 underline-offset-2 hover:decoration-star dark:decoration-rosy/75 dark:hover:decoration-sunny/75 transition-all">All Projects</span>
+                        <!--<span class='tooltip animate-pulse w-max p-1 ml-2 rounded uppercase text-xs text-melody bg-gwanda'>This section is still in progress!</span>-->
+                    </a>
+                    <a href="#credits" class="has-tooltip text-gwanda dark:text-gwen/75 hover:text-gwen transition-all" (click)="modal.openModal()">
+                        <span class="underline decoration-melon decoration-2 underline-offset-2 hover:decoration-star dark:decoration-rosy/75 dark:hover:decoration-sunny/75 transition-all">Credits</span>
+                        <span class='tooltip animate-pulse w-max p-1 ml-2 rounded uppercase text-xs text-melody bg-gwanda'>This section is still in progress!</span>
+                    </a>
+                    <!--<a routerLink="/login" class="text-gwanda dark:text-gwen/75 hover:text-gwen text-xs transition-all mb-3 mt-3">
+                        <span class="underline decoration-melon decoration-2 underline-offset-2 hover:decoration-star dark:decoration-rosy/75 dark:hover:decoration-sunny/75 transition-all w-min">Login</span>
+                    </a>-->
+                </div>
+                <div class="rounded-lg flex flex-col">
+                    <h5 class="text-sm sm:text-base text-gwanda dark:text-sunny/75 font-bold font-miriam-libre mb-1">Social</h5>
+                    <a href="https://www.linkedin.com/in/clfrancisco/" target="_blank" rel="noopener noreferrer" class="text-gwanda dark:text-gwen/75 hover:text-gwen text-xs transition-all mb-3">
+                        <span class="underline decoration-melon decoration-2 underline-offset-2 hover:decoration-star dark:decoration-rosy/75 dark:hover:decoration-sunny/75 transition-all w-min">LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/cheskaf" target="_blank" rel="noopener noreferrer" class="text-gwanda hover:text-gwen dark:text-gwen/75 transition-all">
+                        <span class="underline decoration-melon decoration-2 underline-offset-2 hover:decoration-star dark:decoration-rosy/75 dark:hover:decoration-sunny/75 transition-all w-min">GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<app-modal #modal [isOpen]="modalOpen" [title]="'My Modal Title'" (onClose)="onModalClose()">
+    <!-- Modal content goes here -->
+</app-modal>

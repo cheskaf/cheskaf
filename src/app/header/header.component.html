@@ -1,0 +1,21 @@
+<!-- header.component.html -->
+<header class="text-black dark:text-white py-4 sm:py-6 md:py-8 px-4 sm:px-8 md:px-16 lg:px-24 select-none sticky top-0 z-10 backdrop-blur-lg"> <!--bg-gradient-to-r from-gradienta/50 to-gradientb/50 dark:from-gradientc/50 dark:to-gradientd/50-->
+    <div class="container mx-auto flex justify-between items-center">
+        <a href="#" class="text-xl font-miriam-libre font-bold text-amaranth">cf.</a>
+
+        <nav class="space-x-4 text-gwen dark:text-sunny/75 text-xs uppercase hidden sm:inline">
+            <a href="#" class="hover:text-acorn dark:hover:text-gwen uppercase transition-all">About</a>
+            <a href="#projects" class="hover:text-acorn dark:hover:text-gwen uppercase transition-all">Projects</a>
+            <a href="#skills" class="hover:text-acorn dark:hover:text-gwen uppercase transition-all">Skills</a>
+            <a href="#contact" class="hover:text-acorn dark:hover:text-gwen uppercase transition-all">Contact</a>
+        </nav>
+        
+        <a (click)="toggleDarkMode()" class="has-tooltip text-gwanda bg-gwen/75 hover:text-gwen hover:bg-gwen/50 dark:bg-gwanda/75 dark:text-gradientc/75 dark:hover:text-gwanda dark:hover:bg-gwen transition-all px-2 py-1 rounded-md hidden sm:inline">
+            <i class="ci-Moon"></i>
+            <span class='tooltip w-max p-1 mt-8 sm:-ml-32 md:-ml-20 rounded uppercase text-xs text-melody bg-gwanda'>Toggle Dark Mode</span>
+        </a>
+        <a class="text-xl text-gwen hover:text-gwanda transition-all px-2 py-1 rounded-md inline sm:hidden">
+            <i class="ci-Menu_Alt_01"></i>
+        </a>
+    </div>
+</header>
