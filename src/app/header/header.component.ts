@@ -20,6 +20,7 @@ export class HeaderComponent implements OnInit {
       if (isDarkMode) {
         this.isDarkMode = JSON.parse(isDarkMode);
         this.updateDarkModeClass();
+        this.updateLogo();
       }
     }
   }
@@ -30,6 +31,7 @@ export class HeaderComponent implements OnInit {
       localStorage.setItem('isDarkMode', JSON.stringify(this.isDarkMode));
     }
     this.updateDarkModeClass();
+    this.updateLogo();
   }
 
   updateDarkModeClass() {    
@@ -67,6 +69,15 @@ export class HeaderComponent implements OnInit {
         contactSection.classList.remove('grid-bg-dark');
         contactSection.classList.add('grid-bg');
       }
+    }
+  }
+  
+  updateLogo() {
+    const logo = document.getElementById('about-logo') as HTMLImageElement;
+    if (this.isDarkMode) {
+      logo.src = "../../../assets/svg/logo-dark-md.svg";
+    } else {
+      logo.src = "../../../assets/svg/logo-light-md.svg";
     }
   }
 }

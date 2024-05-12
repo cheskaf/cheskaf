@@ -1,21 +1,29 @@
 <!-- header.component.html -->
 <header class="text-black dark:text-white py-4 sm:py-6 md:py-8 px-4 sm:px-8 md:px-16 lg:px-24 select-none sticky top-0 z-10 backdrop-blur-lg"> <!--bg-gradient-to-r from-gradienta/50 to-gradientb/50 dark:from-gradientc/50 dark:to-gradientd/50-->
     <div class="container mx-auto flex justify-between items-center">
-        <a href="#" class="text-xl font-miriam-libre font-bold text-amaranth">cf.</a>
+        <!--<a href="#" class="text-xl font-miriam-libre font-bold text-amaranth">cf.</a>-->
+        <img src="../../../assets/img/logo-header.svg" class="h-5 md:h-7 lg:h-7" alt="Cheska Francisco" aria-label="Cheska Francisco"/>
 
-        <nav class="space-x-4 text-gwen dark:text-sunny/75 text-xs uppercase hidden sm:inline">
-            <a href="#" class="hover:text-acorn dark:hover:text-gwen uppercase transition-all">About</a>
-            <a href="#projects" class="hover:text-acorn dark:hover:text-gwen uppercase transition-all">Projects</a>
-            <a href="#skills" class="hover:text-acorn dark:hover:text-gwen uppercase transition-all">Skills</a>
-            <a href="#contact" class="hover:text-acorn dark:hover:text-gwen uppercase transition-all">Contact</a>
-        </nav>
-        
-        <a (click)="toggleDarkMode()" class="has-tooltip text-gwanda bg-gwen/75 hover:text-gwen hover:bg-gwen/50 dark:bg-gwanda/75 dark:text-gradientc/75 dark:hover:text-gwanda dark:hover:bg-gwen transition-all px-2 py-1 rounded-md hidden sm:inline">
-            <i class="ci-Moon"></i>
-            <span class='tooltip w-max p-1 mt-8 sm:-ml-32 md:-ml-20 rounded uppercase text-xs text-melody bg-gwanda'>Toggle Dark Mode</span>
-        </a>
-        <a class="text-xl text-gwen hover:text-gwanda transition-all px-2 py-1 rounded-md inline sm:hidden">
-            <i class="ci-Menu_Alt_01"></i>
-        </a>
+        <div>
+            <nav class="space-x-4 py-4 me-4 rounded-full text-lighttext dark:text-sunny/75 dark:bg-darkaccent/30 backdrop-blur-lg border-2 border-dashed border-border/50 text-xs uppercase hidden sm:inline">
+                <a href="#" class="text-chocnut hover:text-nips dark:hover:text-gwen uppercase transition-all py-4 rounded-full px-7 border-2 border-dashed border-border/75 bg-lightbg dark:bg-darkbg -mx-2">About</a>
+                <a href="#skills" class="hover:text-nips dark:hover:text-gwen uppercase transition-all py-4 rounded-full px-4">Skills</a>
+                <a href="#projects" class="hover:text-nips dark:hover:text-gwen uppercase transition-all py-4 rounded-full px-4">Projects</a>
+                <a href="#contact" class="hover:text-nips dark:hover:text-gwen uppercase transition-all py-4 rounded-full px-4">Contact</a>
+            </nav>
+            
+            <nav (click)="toggleDarkMode()" class="has-tooltipspace-x-4 py-4 me-4 rounded-full text-lighttext dark:text-sunny/75 dark:bg-darkaccent/30 backdrop-blur-lg border-2 border-dashed border-border/50 text-xs uppercase hidden sm:inline">
+                <a class="text-chocnut hover:text-nips dark:hover:text-gwen uppercase transition-all py-4 rounded-full px-5 border-2 border-dashed border-border/75 bg-lightbg dark:bg-darkbg -mx-2">
+                    <i class="ci-Sun"></i>
+                </a>
+                <a class="hover:text-nips dark:hover:text-gwen uppercase transition-all py-4 rounded-full px-4">
+                    <i class="ci-Moon"></i>
+                </a>
+            </nav>
+
+            <a class="text-xl text-gwen hover:text-gwanda transition-all px-2 py-1 rounded-md inline sm:hidden">
+                <i class="ci-Menu_Alt_01"></i>
+            </a>
+        </div>
     </div>
 </header>

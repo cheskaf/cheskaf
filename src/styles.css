@@ -9,6 +9,25 @@
 
 @layer base {
     :root {
+        /* v2 */
+        --color-chocnut: 240 47 70; /* chocnut */
+        --color-frutos: 249 94 28; /* frutos */
+        --color-nips: 76 110 196; /* nips */
+        --color-border: 145 64 64; /* border */
+        
+        --color-light-bg: 251 238 222; /* light bg */
+        --color-light-bg-2: 255 248 246; /* light bg 2 */
+        --color-light-accent: 173 88 88; /* light accent (30%) */
+        --color-light-text: 92 25 25; /* light text */
+        --color-light-text-2: 162 74 76; /* light text */
+        
+        --color-dark-bg: 38 6 12; /* dark bg */
+        --color-dark-bg-2: 18 3 6; /* dark bg 2 */
+        --color-dark-accent: 123 48 48; /* dark accent (30%) */
+        --color-dark-text: 255 230 227; /* dark text */
+        --color-dark-text-2: 255 201 194; /* dark text */
+        
+        /* v1 */
         --color-amaranth: 216 31 76; /* amaranth red */
         --color-gwanda: 140 63 81; /* quinacridone magenta */
         --color-gwen: 206 131 131; /* old rose */

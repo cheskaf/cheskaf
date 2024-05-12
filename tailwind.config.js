@@ -7,6 +7,25 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        // v2
+        chocnut: 'rgb(var(--color-chocnut) / <alpha-value>)', // chocnut
+        frutos: 'rgb(var(--color-frutos) / <alpha-value>)', // frutos
+        nips: 'rgb(var(--color-nips) / <alpha-value>)', // nips
+        border: 'rgb(var(--color-border) / <alpha-value>)', // border
+        
+        lightbg: 'rgb(var(--color-light-bg) / <alpha-value>)', // light-bg
+        lightbg2: 'rgb(var(--color-light-bg-2) / <alpha-value>)', // light-bg-2
+        lightaccent: 'rgb(var(--color-light-accent) / <alpha-value>)', // light-accent
+        lighttext: 'rgb(var(--color-light-text) / <alpha-value>)', // light-text
+        lighttext2: 'rgb(var(--color-light-text-2) / <alpha-value>)', // light-text-2
+        
+        darkbg: 'rgb(var(--color-dark-bg) / <alpha-value>)', // dark-bg
+        darkbg2: 'rgb(var(--color-dark-bg-2) / <alpha-value>)', // dark-bg-2
+        darkaccent: 'rgb(var(--color-dark-accent) / <alpha-value>)', // dark-accent
+        darktext: 'rgb(var(--color-dark-text) / <alpha-value>)', // dark-text
+        darktext2: 'rgb(var(--color-dark-text-2) / <alpha-value>)', // dark-text-2
+        
+        // v1
         amaranth: 'rgb(var(--color-amaranth) / <alpha-value>)', // amaranth red
         gwanda: 'rgb(var(--color-gwanda) / <alpha-value>)', // quinacridone magenta
         gwen: 'rgb(var(--color-gwen) / <alpha-value>)', // old rose
