@@ -74,10 +74,12 @@ export class HeaderComponent implements OnInit {
   
   updateLogo() {
     const logo = document.getElementById('about-logo') as HTMLImageElement;
-    if (this.isDarkMode) {
-      logo.src = "../../../assets/svg/logo-dark-md.svg";
-    } else {
-      logo.src = "../../../assets/svg/logo-light-md.svg";
+    if (logo) {
+      if (this.isDarkMode) {
+        logo.src = "../../../assets/svg/logo-dark-md.svg";
+      } else {
+        logo.src = "../../../assets/svg/logo-light-md.svg";
+      }
     }
   }
 }
