@@ -5,19 +5,17 @@
         <img src="../../../assets/img/logo-header.svg" class="h-5 md:h-7 lg:h-7" alt="Cheska Francisco" aria-label="Cheska Francisco"/>
 
         <div>
-            <nav class="space-x-4 py-4 me-4 rounded-full text-lighttext dark:text-sunny/75 dark:bg-darkaccent/30 backdrop-blur-lg border-2 border-dashed border-border/50 text-xs uppercase hidden sm:inline">
-                <a href="#" class="text-chocnut hover:text-nips dark:hover:text-gwen uppercase transition-all py-4 rounded-full px-7 border-2 border-dashed border-border/75 bg-lightbg dark:bg-darkbg -mx-2">About</a>
-                <a href="#skills" class="hover:text-nips dark:hover:text-gwen uppercase transition-all py-4 rounded-full px-4">Skills</a>
-                <a href="#projects" class="hover:text-nips dark:hover:text-gwen uppercase transition-all py-4 rounded-full px-4">Projects</a>
-                <a href="#contact" class="hover:text-nips dark:hover:text-gwen uppercase transition-all py-4 rounded-full px-4">Contact</a>
+            <nav class="space-x-4 py-4 me-4 rounded-full text-lighttext dark:text-melody/50 dark:bg-darkaccent/30 backdrop-blur-lg border-2 border-dashed border-border/50 text-xs uppercase hidden sm:inline">
+                <a href="#about" class="hover:text-chocnut dark:hover:text-gwen uppercase transition-all py-4 rounded-full ps-7 pe-2">About</a> <!--border-2 border-dashed border-border/75 bg-lightbg dark:bg-darkbg -mx-2-->
+                <a href="#skills" class="hover:text-chocnut dark:hover:text-gwen uppercase transition-all py-4 rounded-full px-2">Skills</a>
+                <a href="#projects" class="hover:text-chocnut dark:hover:text-gwen uppercase transition-all py-4 rounded-full px-2">Projects</a>
+                <a href="#contact" class="hover:text-chocnut dark:hover:text-gwen uppercase transition-all py-4 rounded-full px-2">Contact</a>
+                <a href="https://drive.google.com/file/d/1tchQSUULJWGLV1vIDSHQBMjTcfbddAuD/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="hover:text-chocnut dark:hover:text-gwen uppercase transition-all py-4 rounded-full ps-2 pe-7">Resume</a>
             </nav>
             
-            <nav (click)="toggleDarkMode()" class="has-tooltipspace-x-4 py-4 me-4 rounded-full text-lighttext dark:text-sunny/75 dark:bg-darkaccent/30 backdrop-blur-lg border-2 border-dashed border-border/50 text-xs uppercase hidden sm:inline">
-                <a class="text-chocnut hover:text-nips dark:hover:text-gwen uppercase transition-all py-4 rounded-full px-5 border-2 border-dashed border-border/75 bg-lightbg dark:bg-darkbg -mx-2">
-                    <i class="ci-Sun"></i>
-                </a>
-                <a class="hover:text-nips dark:hover:text-gwen uppercase transition-all py-4 rounded-full px-4">
-                    <i class="ci-Moon"></i>
+            <nav (click)="toggleDarkMode()" class="has-tooltipspace-x-4 py-4 me-4 rounded-full text-lighttext dark:text-sunny/75 dark:bg-darkaccent/30 backdrop-blur-lg border-2 border-dashed border-border/50 text-sm uppercase hidden sm:inline">
+                <a class="hover:text-chocnut dark:hover:text-gwen uppercase transition-all py-4 rounded-full px-5"> <!--border-2 border-dashed border-border/75 bg-lightbg dark:bg-darkbg -mx-2-->
+                    <i [class.ci-Sun]="!isDarkMode" [class.ci-Moon]="isDarkMode"></i>
                 </a>
             </nav>
 
