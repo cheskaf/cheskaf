@@ -1,8 +1,8 @@
 <!-- footer.component.html -->
-<footer class="text-gwen dark:text-gwen/75 py-10">
+<footer class="text-gwen dark:text-gwen/75 py-6">
     <div class="container mx-auto text-xs">
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-0 sm:gap-2 px-6 sm:px-12">
-            <div class="mb-10 sm:mb-4 justify-center text-center sm:justify-start sm:text-left">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-0 sm:gap-2 px-6 sm:px-12 lg:px-40">
+            <div class="justify-center text-center sm:justify-start sm:text-left">
                 <h4 class="inline-block text-xl sm:text-2xl font-bold font-miriam-libre">
                     <span class="bg-gradient-to-r from-amaranth to-gwen dark:from-sunny dark:to-rosy bg-clip-text text-transparent">Cheska Francisco.</span>
                 </h4>
@@ -11,28 +11,32 @@
                     <span class="bg-melody dark:bg-gwanda/75 dark:border-gwanda/25 rounded-md px-1 py-0.5 font-miriam-libre">v1.0</span> © 2024
                 </p>
                 <p class="text-sm">
-                    <a href="https://github.com/cheskaf/cheskaf/tree/master/portfolio" target="_blank" rel="noopener noreferrer">Made with ❤️ using Angular and Tailwind</a>
+                    <a href="https://github.com/cheskaf/cheskaf" target="_blank" rel="noopener noreferrer">Made with ❤️ using Angular and Tailwind</a>
                     <!--<span class="px-2 text-melon">/</span>-->
                 </p>
                 <!--<hr class="w-16 h-0.5 mx-auto sm:mx-0 my-3 bg-gwen border-0 rounded">-->
             </div>
-            <div class="grid grid-cols-2 gap-0 sm:gap-2 sm:px-12 justify-center justify-items-center text-center sm:justify-start sm:text-left">
+            <div class="flex flex-col justify-center">
+                <span class="flex justify-end">
+                    <a href="https://www.linkedin.com/in/clfrancisco/" target="_blank" rel="noopener noreferrer" class="link-icon inline-block p-4 me-2 text-lighttext dark:text-gwen rounded-full bg-lightaccent/10 hover:bg-gwen dark:bg-darkaccent/20 transition-all border-2 border-dashed border-border/50 shadow-lg shadow-gwen/25 dark:shadow-amaranth/25 dark:hover:shadow-gwanda/25">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                    <a href="https://github.com/cheskaf" target="_blank" rel="noopener noreferrer" class="link-icon inline-block p-4 text-lighttext dark:text-gwen rounded-full bg-lightaccent/10 hover:bg-gwen dark:bg-darkaccent/20 transition-all border-2 border-dashed border-border/50 shadow-lg shadow-gwen/25 dark:shadow-amaranth/25 dark:hover:shadow-gwanda/25">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
+                </span>
+            </div>
+            <!-- DEV
+            
+            <div class="grid grid-cols-3 gap-0 sm:gap-2 sm:px-12 justify-center justify-items-center text-center sm:justify-start sm:text-left">
                 <div class="rounded-lg flex flex-col">
                     <h5 class="text-sm sm:text-base text-gwanda dark:text-sunny/75 font-bold font-miriam-libre mb-1">Links</h5>
                     <a routerLink="/" class="text-gwanda dark:text-gwen/75 hover:text-gwen text-xs transition-all mb-3">
-                        <span class="underline decoration-melon decoration-2 underline-offset-2 hover:decoration-star dark:decoration-rosy/75 dark:hover:decoration-sunny/75 transition-all">Home</span>
+                        <span class="underline decoration-melon decoration-2 underline-offset-2 hover:decoration-star dark:decoration-rosy/75 dark:hover:decoration-sunny/75 transition-all">Portfolio</span>
                     </a>
                     <a routerLink="/projects" class="has-tooltip text-gwanda dark:text-gwen/75 hover:text-gwen transition-all mb-3">
                         <span class="underline decoration-melon decoration-2 underline-offset-2 hover:decoration-star dark:decoration-rosy/75 dark:hover:decoration-sunny/75 transition-all">All Projects</span>
-                        <!--<span class='tooltip animate-pulse w-max p-1 ml-2 rounded uppercase text-xs text-melody bg-gwanda'>This section is still in progress!</span>-->
                     </a>
-                    <a href="#credits" class="has-tooltip text-gwanda dark:text-gwen/75 hover:text-gwen transition-all" (click)="modal.openModal()">
-                        <span class="underline decoration-melon decoration-2 underline-offset-2 hover:decoration-star dark:decoration-rosy/75 dark:hover:decoration-sunny/75 transition-all">Credits</span>
-                        <span class='tooltip animate-pulse w-max p-1 ml-2 rounded uppercase text-xs text-melody bg-gwanda'>This section is still in progress!</span>
-                    </a>
-                    <!--<a routerLink="/login" class="text-gwanda dark:text-gwen/75 hover:text-gwen text-xs transition-all mb-3 mt-3">
-                        <span class="underline decoration-melon decoration-2 underline-offset-2 hover:decoration-star dark:decoration-rosy/75 dark:hover:decoration-sunny/75 transition-all w-min">Login</span>
-                    </a>-->
                 </div>
                 <div class="rounded-lg flex flex-col">
                     <h5 class="text-sm sm:text-base text-gwanda dark:text-sunny/75 font-bold font-miriam-libre mb-1">Social</h5>
@@ -43,10 +47,20 @@
                         <span class="underline decoration-melon decoration-2 underline-offset-2 hover:decoration-star dark:decoration-rosy/75 dark:hover:decoration-sunny/75 transition-all w-min">GitHub</span>
                     </a>
                 </div>
+                <div class="rounded-lg flex flex-col">
+                    <h5 class="text-sm sm:text-base text-gwanda dark:text-sunny/75 font-bold font-miriam-libre mb-1">Dev</h5>
+                    <a href="/login" class="text-gwanda hover:text-gwen dark:text-gwen/75 transition-all">
+                        <span class="underline decoration-melon decoration-2 underline-offset-2 hover:decoration-star dark:decoration-rosy/75 dark:hover:decoration-sunny/75 transition-all w-min">Login</span>
+                    </a>
+                    <a href="/admin" class="text-gwanda hover:text-gwen dark:text-gwen/75 transition-all mt-3">
+                        <span class="underline decoration-melon decoration-2 underline-offset-2 hover:decoration-star dark:decoration-rosy/75 dark:hover:decoration-sunny/75 transition-all w-min">Admin</span>
+                    </a>
+                    <a href="/admindfgsg" class="text-gwanda hover:text-gwen dark:text-gwen/75 transition-all mt-3">
+                        <span class="underline decoration-melon decoration-2 underline-offset-2 hover:decoration-star dark:decoration-rosy/75 dark:hover:decoration-sunny/75 transition-all w-min">Not Found</span>
+                    </a>
+                </div>
             </div>
+            -->
         </div>
     </div>
 </footer>
-<app-modal #modal [isOpen]="modalOpen" [title]="'My Modal Title'" (onClose)="onModalClose()">
-    <!-- Modal content goes here -->
-</app-modal>
