@@ -1,8 +1,11 @@
 <!-- content.component.html -->
-<app-header />
-<div class="content-container snap-y">
-    <app-about></app-about>
-    <app-skills></app-skills>    
-    <app-projects></app-projects>
-    <app-contact></app-contact>
-</div>
+<app-header></app-header>
+<section class="flex flex-col items-stretch justify-between min-h-screen">    
+    <div class="content-container snap-y">
+        <app-about></app-about>
+        <app-skills></app-skills>    
+        <app-projects></app-projects>
+        <app-contact></app-contact>
+    </div>
+</section>
+<app-footer></app-footer>

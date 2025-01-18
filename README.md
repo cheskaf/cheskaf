@@ -19,7 +19,8 @@ Here are some ideas to get you started:
 
 i'm a qa engineer and web developer! ₊˚✧ﾟ. ( ꩜ ᯅ ꩜;)⁭ 
 
-<a href="https://cheskaf.vercel.app/"><img alt="Portfolio" title="Powered by Vercel" src="https://img.shields.io/badge/-Portfolio-informational?logo=vercel&style=for-the-badge&logoColor=c770f0&color=0a0e12&labelColor=0a0e12"/></a>
+<a href="https://cheskaf.vercel.app/"><img alt="Portfolio" title="Powered by Vercel" src="https://img.shields.io/badge/-Portfolio-informational?logo=vercel&style=for-the-badge&logoColor=c770f0&color=0a0e12&labelColor=0a0e12"/></a> 
+![](https://komarev.com/ghpvc/?username=cheskaf&color=9745f5&style=for-the-badge&label=VISITS&abbreviated=true)
 
 ## technologies ⁭☆★☆
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) 
@@ -31,10 +32,7 @@ i'm a qa engineer and web developer! ₊˚✧ﾟ. ( ꩜ ᯅ ꩜;)⁭
 ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)	![Nodemon](https://img.shields.io/badge/NODEMON-%23323330.svg?style=for-the-badge&logo=nodemon&logoColor=%BBDEAD) ![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white) ![EJS](https://img.shields.io/badge/ejs-%23B4CA65.svg?style=for-the-badge&logo=ejs&logoColor=black) ![Notion](https://img.shields.io/badge/Notion-%23000000.svg?style=for-the-badge&logo=notion&logoColor=white) ![GitHub Copilot](https://img.shields.io/badge/github_copilot-8957E5?style=for-the-badge&logo=github-copilot&logoColor=white) 
 
 ## github stats 🌟
-![cheskaf's Streak](https://cheskaf-gh-streak.vercel.app/api?user=cheskaf&theme=midnight-purple&hide_border=true)
+<!--![Stats](https://cheskaf-gh-stats.vercel.app/api?username=cheskaf&theme=midnight-purple&show_icons=true&hide_border=true&count_private=true)-->
+![Languages](https://cheskaf-gh-stats.vercel.app/api/top-langs/?username=cheskaf&theme=midnight-purple&show_icons=true&hide_border=true&layout=compact)
 
-![cheskaf's Stats](https://cheskaf-gh-stats.vercel.app/api?username=cheskaf&theme=midnight-purple&show_icons=true&hide_border=true&count_private=true)
-
-![cheskaf's Top Languages](https://cheskaf-gh-stats.vercel.app/api/top-langs/?username=cheskaf&theme=midnight-purple&show_icons=true&hide_border=true&layout=compact)
-
-![](https://komarev.com/ghpvc/?username=cheskaf&color=9745f5&style=for-the-badge&label=VISITS&abbreviated=true)
+![Streak](https://cheskaf-gh-streak.vercel.app/api?user=cheskaf&theme=midnight-purple&hide_border=true)
